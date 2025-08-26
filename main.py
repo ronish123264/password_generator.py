@@ -15,4 +15,6 @@ def generate_password(length):
     
     random.shuffle(password)
     
+    return "" .join(password)
+
 
