@@ -13,7 +13,7 @@ A simple Python program to generate secure random passwords.
 ## How to Run
 1. Clone the repository:
 
-git 
+git clone https://github.com/ronish123264/password_generator.py.git
 
 2. Navigate into the folder:cd password-generator
 
