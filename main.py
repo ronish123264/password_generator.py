@@ -9,9 +9,8 @@ def generate_password(length):
         random.choice(string.punctuation)
     ]
     
-    character = string.ascii_uppercase + string.ascii_lowercase + string.gigits + string.punctuation
-    for _ in range(length-4):
-        password.append[random.choice(character)]
+    character = string.ascii_uppercase + string.ascii_lowercase + string.digits + string.punctuation
+    password += [random.choice(character)for _ in range(length-4)]
     
     random.shuffle(password)
     
@@ -22,6 +21,7 @@ length = int(input("Enter the length of the password (min 8): "))
 if length < 8:
     print("The length of the password must be at least 8 !!")
     exit()
+    
 password = generate_password(length)
 print(f"The generated password is: {password}")
 
