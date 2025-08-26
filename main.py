@@ -19,5 +19,11 @@ def generate_password(length):
 
 
 length = int(input("Enter the length of the password (min 8): "))
+if length < 8:
+    print("The length of the password must be at least 8 !!")
+    exit()
+password = generate_password(length)
+print(f"The generated password is: {password}")
+
 
 
