@@ -18,3 +18,6 @@ def generate_password(length):
     return "" .join(password)
 
 
+length = int(input("Enter the length of the password (min 8): "))
+
+
