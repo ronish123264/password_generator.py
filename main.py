@@ -10,8 +10,7 @@ def generate_password(length):
         random.choice(string.punctuation)
     ]
 
-    character = string.ascii_uppercase + \
-        string.ascii_lowercase + string.digits + string.punctuation
+    character = string.ascii_uppercase + string.ascii_lowercase + string.digits + string.punctuation
     password += [random.choice(character)for _ in range(length-4)]
 
     random.shuffle(password)
